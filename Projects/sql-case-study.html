@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>SQL Case Study | Dipanshu Rawat</title>
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+
+  <nav>
+    <a href="../index.html">Home</a>
+    <a href="../projects.html">Projects</a>
+    <a href="../ai-lab.html">AI Lab</a>
+    <a href="../about.html">About</a>
+    <a href="../contact.html">Contact</a>
+  </nav>
+
+  <main>
+    <h1>SQL Case Study: Subscription Billing System</h1>
+
+    <section>
+      <h2>Problem</h2>
+      <p>
+        Subscription-based businesses require a reliable way to manage
+        customers, plans, billing cycles, and payments.
+      </p>
+      <p>
+        Poorly designed systems often lead to duplicate charges,
+        inconsistent records, and revenue leakage.
+      </p>
+    </section>
+
+    <section>
+      <h2>Requirements</h2>
+      <ul>
+        <li>Store customer and subscription data</li>
+        <li>Support multiple subscription plans</li>
+        <li>Track billing cycles and payment status</li>
+        <li>Prevent duplicate or invalid billing entries</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Design</h2>
+      <p>
+        The database is designed using normalized relational tables
+        separating customers, plans, subscriptions, and payments.
+      </p>
+      <p>
+        Foreign key constraints ensure referential integrity, while
+        data constraints prevent invalid states.
+      </p>
+    </section>
+
+    <section>
+      <h2>Logic</h2>
+      <p>
+        Business rules such as billing frequency and payment validation
+        are enforced at the database level.
+      </p>
+      <p>
+        Stored procedures and triggers automate recurring actions
+        and reduce the risk of human error.
+      </p>
+    </section>
+
+    <section>
+      <h2>Analysis</h2>
+      <p>
+        This schema enables analysis of active subscriptions,
+        revenue trends, failed payments, and churn indicators.
+      </p>
+    </section>
+
+    <section>
+      <h2>Trade-offs</h2>
+      <p>
+        Advanced billing scenarios such as proration, discounts,
+        or multi-currency support are intentionally excluded
+        to keep the system simple and reliable.
+      </p>
+    </section>
+  </main>
+
+  <script src="../js/main.js"></script>
+</body>
+</html>
