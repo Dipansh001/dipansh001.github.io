@@ -156,3 +156,47 @@ a {
 a:hover {
   color: #1d4ed8;
 }
+/* ===== Dynamic Gradient Hero (Aesthetic) ===== */
+.hero {
+  position: relative;
+  padding: 120px 20px;
+  text-align: center;
+  color: #f8fafc;
+
+  background: linear-gradient(
+    -45deg,
+    #0f172a,
+    #1e293b,
+    #312e81,
+    #020617
+  );
+  background-size: 400% 400%;
+  animation: gradientFlow 18s ease infinite;
+}
+
+/* Soft overlay for contrast */
+.hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(2, 6, 23, 0.55);
+}
+
+/* Keep text above overlay */
+.hero > * {
+  position: relative;
+  z-index: 1;
+}
+
+/* Gradient animation */
+@keyframes gradientFlow {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
