@@ -7,7 +7,7 @@
 </head>
 <body>
 
-  <nav>
+  <nav role="navigation" aria-label="Main navigation">
     <a href="index.html">Home</a>
     <a href="projects.html">Projects</a>
     <a href="ai-lab.html">AI Lab</a>
@@ -15,23 +15,23 @@
     <a href="contact.html">Contact</a>
   </nav>
 
-  <!-- Hero -->
-  <main class="hero">
-    <h1>About</h1>
-    <p class="subtitle">
-      How I Think · How I Build · How I Learn
-    </p>
+  <main role="main">
 
-    <p>
-      I approach technology as a system of ideas rather than a
-      collection of tools. My focus is on understanding how
-      data, logic, and decisions connect.
-    </p>
-  </main>
+    <!-- Hero -->
+    <section class="hero">
+      <h1>About</h1>
+      <p class="subtitle">
+        How I Think · How I Build · How I Learn
+      </p>
 
-  <!-- Content -->
-  <main>
+      <p>
+        I approach technology as a system of ideas rather than a
+        collection of tools. My focus is on understanding how
+        data, logic, and decisions connect.
+      </p>
+    </section>
 
+    <!-- Content Cards -->
     <section class="card">
       <h2>🧩 Thinking Style</h2>
       <p>
@@ -57,16 +57,16 @@
     <section class="card">
       <h2>🛠️ What I Care About</h2>
       <p>
-        • Data integrity and correctness  
-        • Explainable analysis  
-        • Practical AI integration  
+        • Data integrity and correctness<br>
+        • Explainable analysis<br>
+        • Practical AI integration<br>
         • Long-term maintainability
       </p>
     </section>
 
   </main>
 
-  <footer class="site-footer">
+  <footer class="site-footer" role="contentinfo">
     <p>
       © <span id="year"></span> Dipanshu Rawat · Built with clarity and care
     </p>
