@@ -2,75 +2,83 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>AI Lab | Dipanshu Rawat</title>
+  <title>About | Dipanshu Rawat</title>
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
-  <nav>
+  <!-- Navigation -->
+  <nav role="navigation" aria-label="Main navigation">
     <a href="index.html">Home</a>
     <a href="projects.html">Projects</a>
     <a href="ai-lab.html">AI Lab</a>
-    <a href="about.html">About</a>
+    <a href="about.html" aria-current="page">About</a>
     <a href="contact.html">Contact</a>
   </nav>
 
-  <!-- Hero -->
-  <main class="hero">
-    <h1>AI Lab</h1>
-    <p class="subtitle">
-      Applied Experiments · Systems Thinking · Model Behavior
-    </p>
+  <!-- Main Content -->
+  <main role="main">
 
-    <p>
-      This lab is a space for building and testing applied AI systems.
-      The focus is on understanding behavior, limitations, and
-      real-world integration.
-    </p>
+    <!-- Hero Section -->
+    <section class="hero">
+      <h1>About</h1>
+      <p class="subtitle">
+        How I Think · How I Build · How I Learn
+      </p>
+
+      <p>
+        I approach technology as a system of ideas rather than a
+        collection of tools. My focus is on understanding how
+        data, logic, and decisions connect.
+      </p>
+    </section>
+
+    <!-- Thinking Style -->
+    <section class="card">
+      <h2>🧩 Thinking Style</h2>
+      <p>
+        I prefer working from first principles — understanding
+        constraints, trade-offs, and failure modes before
+        choosing tools or frameworks.
+      </p>
+      <p>
+        This mindset shapes how I design databases, analyze data,
+        and integrate AI into real systems.
+      </p>
+    </section>
+
+    <!-- Learning Philosophy -->
+    <section class="card">
+      <h2>📚 Learning Philosophy</h2>
+      <p>
+        I learn by building, breaking, and refining systems.
+        Clear explanations and repeatable logic matter more
+        to me than quick results.
+      </p>
+    </section>
+
+    <!-- Values -->
+    <section class="card">
+      <h2>🛠️ What I Care About</h2>
+      <ul>
+        <li>Data integrity and correctness</li>
+        <li>Explainable analysis</li>
+        <li>Practical AI integration</li>
+        <li>Long-term maintainability</li>
+      </ul>
+    </section>
+
   </main>
 
-  <!-- Lab Sections -->
-  <main>
-
-    <section class="card">
-      <h2>🧠 Model Experiments</h2>
-      <p>
-        Experiments involving classical machine learning models
-        and modern AI techniques, designed to study performance,
-        failure modes, and decision boundaries.
-      </p>
-      <p><strong>Status:</strong> In progress</p>
-    </section>
-
-    <section class="card">
-      <h2>📊 Data-to-Decision Pipelines</h2>
-      <p>
-        End-to-end pipelines that transform raw data into
-        interpretable outputs using structured reasoning.
-      </p>
-      <p><strong>Status:</strong> Planned</p>
-    </section>
-
-    <section class="card">
-      <h2>⚙️ System Integration</h2>
-      <p>
-        Focus on how AI models interact with databases,
-        APIs, and real applications without leaking logic
-        or compromising reliability.
-      </p>
-      <p><strong>Status:</strong> Planned</p>
-    </section>
-
-  </main>
-
- <footer class="site-footer">
+  <!-- Footer -->
+  <footer class="site-footer" role="contentinfo">
     <p>
       © <span id="year"></span> Dipanshu Rawat · Built with clarity and care
     </p>
     <p class="footer-links">
       <a href="projects.html">Projects</a> ·
       <a href="ai-lab.html">AI Lab</a> ·
-      <a href="about.html">About</a> ·
+      <a href="about.html" aria-current="page">About</a> ·
       <a href="contact.html">Contact</a>
     </p>
   </footer>
