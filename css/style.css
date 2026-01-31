@@ -1,94 +1,134 @@
-
-body {
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
-  margin: 0;
-  padding: 0;
-  background: #fafafa;
-  color: #222;
-  line-height: 1.6;
+* {
+  box-sizing: border-box;
 }
 
+body {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+    sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #f9fafb;
+  color: #1f2933;
+  line-height: 1.7;
+}
 nav {
-  padding: 16px 24px;
-  border-bottom: 1px solid #ddd;
+  padding: 18px 28px;
+  border-bottom: 1px solid #e5e7eb;
   background: #ffffff;
+  position: sticky;
+  top: 0;
+  z-index: 10;
 }
 
 nav a {
-  margin-right: 16px;
+  margin-right: 18px;
   text-decoration: none;
-  color: #444;
+  color: #374151;
   font-weight: 500;
   position: relative;
+  padding-bottom: 4px;
 }
-
 nav a::after {
   content: "";
   position: absolute;
   left: 0;
-  bottom: -4px;
+  bottom: 0;
   width: 0;
   height: 2px;
-  background: #0077ff;
+  background: #2563eb;
   transition: width 0.3s ease;
 }
 
 nav a:hover::after {
   width: 100%;
 }
-
 main {
-  max-width: 800px;
-  margin: 40px auto;
-  padding: 0 20px;
-
+  max-width: 860px;
+  margin: 60px auto;
+  padding: 0 24px;
   animation: fadeIn 0.6s ease;
 }
+
 .hero {
-  padding: 80px 20px;
+  padding: 100px 20px 80px;
   text-align: center;
 }
 
 .hero h1 {
-  font-size: 3rem;
-  margin-bottom: 10px;
+  font-size: 3.2rem;
+  margin-bottom: 12px;
+  letter-spacing: -0.02em;
 }
 
 .subtitle {
-  color: #0077ff;
+  color: #2563eb;
   font-weight: 500;
-  margin-bottom: 30px;
+  font-size: 1.05rem;
+  margin-bottom: 32px;
+}
+
+h1,
+h2 {
+  color: #111827;
+}
+
+h2 {
+  margin-top: 0;
+  margin-bottom: 8px;
 }
 
 .card {
   background: #ffffff;
-  padding: 24px;
-  border-radius: 12px;
-  margin-bottom: 24px;
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
-  transition: transform 0.3s ease;
+  padding: 28px;
+  border-radius: 14px;
+  margin-bottom: 28px;
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.06);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .card:hover {
   transform: translateY(-6px);
+  box-shadow: 0 20px 45px rgba(0, 0, 0, 0.08);
 }
 
-.card h2 {
-  margin-top: 0;
+.card p {
+  margin-top: 10px;
+  color: #374151;
 }
 
 .card a {
   display: inline-block;
-  margin-top: 12px;
+  margin-top: 14px;
   text-decoration: none;
-  color: #0077ff;
+  color: #2563eb;
   font-weight: 500;
+}
+
+pre {
+  background: #0f172a;
+  color: #e5e7eb;
+  padding: 18px;
+  border-radius: 10px;
+  overflow-x: auto;
+  font-size: 0.9rem;
+  line-height: 1.6;
+  margin-top: 16px;
+}
+
+code {
+  font-family: "JetBrains Mono", Consolas, monospace;
+}
+
+img {
+  max-width: 100%;
+  border-radius: 10px;
+  margin-top: 20px;
 }
 
 @keyframes fadeIn {
   from {
     opacity: 0;
-    transform: translateY(10px);
+    transform: translateY(12px);
   }
   to {
     opacity: 1;
