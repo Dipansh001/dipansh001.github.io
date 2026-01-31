@@ -135,3 +135,24 @@ img {
     transform: translateY(0);
   }
 }
+
+section {
+  margin-bottom: 40px;
+}
+
+p {
+  max-width: 65ch;
+}
+
+strong {
+  color: #111827;
+  font-weight: 600;
+}
+
+a {
+  transition: color 0.2s ease;
+}
+
+a:hover {
+  color: #1d4ed8;
+}
