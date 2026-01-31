@@ -156,39 +156,68 @@ a {
 a:hover {
   color: #1d4ed8;
 }
-/* ===== Dynamic Gradient Hero (Aesthetic) ===== */
+/* ===== Fixed Dynamic Gradient Hero ===== */
 .hero {
   position: relative;
+  min-height: 70vh;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
   padding: 120px 20px;
   text-align: center;
-  color: #f8fafc;
 
   background: linear-gradient(
     -45deg,
+    #020617,
     #0f172a,
     #1e293b,
-    #312e81,
     #020617
   );
   background-size: 400% 400%;
-  animation: gradientFlow 18s ease infinite;
+  animation: gradientFlow 20s ease infinite;
+
+  color: #ffffff;
 }
 
-/* Soft overlay for contrast */
+/* Dark overlay (lighter than before) */
 .hero::before {
   content: "";
   position: absolute;
   inset: 0;
-  background: rgba(2, 6, 23, 0.55);
+  background: rgba(2, 6, 23, 0.35);
 }
 
-/* Keep text above overlay */
+/* Ensure text stays on top */
 .hero > * {
   position: relative;
   z-index: 1;
 }
 
-/* Gradient animation */
+/* Typography fixes */
+.hero h1 {
+  font-size: 3.2rem;
+  font-weight: 700;
+  margin-bottom: 12px;
+  letter-spacing: -0.02em;
+}
+
+.hero .subtitle {
+  font-size: 1.1rem;
+  color: #60a5fa;
+  margin-bottom: 24px;
+}
+
+.hero p {
+  max-width: 620px;
+  font-size: 1rem;
+  line-height: 1.7;
+  opacity: 0.95;
+}
+
+/* Smooth gradient animation */
 @keyframes gradientFlow {
   0% {
     background-position: 0% 50%;
