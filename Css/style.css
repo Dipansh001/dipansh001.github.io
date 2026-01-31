@@ -1,27 +1,22 @@
-body {
-  font-family: system-ui, -apple-system, sans-serif;
-  margin: 0;
-  padding: 0;
-  line-height: 1.6;
-  background: #fafafa;
-  color: #222;
-}
-
-nav {
-  padding: 16px;
-  border-bottom: 1px solid #ddd;
-  background: #fff;
-}
-
 nav a {
   margin-right: 16px;
   text-decoration: none;
-  color: #333;
+  color: #444;
   font-weight: 500;
+  position: relative;
 }
 
-main {
-  max-width: 800px;
-  margin: 40px auto;
-  padding: 0 20px;
+nav a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -4px;
+  width: 0;
+  height: 2px;
+  background: #0077ff;
+  transition: width 0.3s ease;
+}
+
+nav a:hover::after {
+  width: 100%;
 }
