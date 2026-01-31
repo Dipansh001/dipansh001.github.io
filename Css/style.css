@@ -1,0 +1,27 @@
+body {
+  font-family: system-ui, -apple-system, sans-serif;
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+  background: #fafafa;
+  color: #222;
+}
+
+nav {
+  padding: 16px;
+  border-bottom: 1px solid #ddd;
+  background: #fff;
+}
+
+nav a {
+  margin-right: 16px;
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+}
+
+main {
+  max-width: 800px;
+  margin: 40px auto;
+  padding: 0 20px;
+}
