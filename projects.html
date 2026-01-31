@@ -7,16 +7,24 @@
 </head>
 <body>
   
-  <nav>
+  <!-- Navigation -->
+  <nav role="navigation" aria-label="Main navigation">
     <a href="index.html">Home</a>
-    <a href="projects.html">Projects</a>
+    <a href="projects.html" aria-current="page">Projects</a>
     <a href="ai-lab.html">AI Lab</a>
     <a href="about.html">About</a>
     <a href="contact.html">Contact</a>
   </nav>
 
-  <main>
-    <h1>Projects</h1>
+  <!-- Main Content -->
+  <main role="main">
+
+    <section class="hero">
+      <h1>Projects</h1>
+      <p class="subtitle">
+        Selected work · Systems · Analysis
+      </p>
+    </section>
 
     <section class="card">
       <h2>SQL & Database Systems</h2>
@@ -34,14 +42,16 @@
         problem solving using Python.
       </p>
     </section>
+
   </main>
 
-  <footer class="site-footer">
+  <!-- Footer -->
+  <footer class="site-footer" role="contentinfo">
     <p>
       © <span id="year"></span> Dipanshu Rawat · Built with clarity and care
     </p>
     <p class="footer-links">
-      <a href="projects.html">Projects</a> ·
+      <a href="projects.html" aria-current="page">Projects</a> ·
       <a href="ai-lab.html">AI Lab</a> ·
       <a href="about.html">About</a> ·
       <a href="contact.html">Contact</a>
