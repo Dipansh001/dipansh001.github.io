@@ -59,16 +59,30 @@
 </section>
 
     <section>
-      <h2>Logic</h2>
-      <p>
-        Business rules such as billing frequency and payment validation
-        are enforced at the database level.
-      </p>
-      <p>
-        Stored procedures and triggers automate recurring actions
-        and reduce the risk of human error.
-      </p>
-    </section>
+  <h2>Logic</h2>
+
+  <p>
+    One critical rule in subscription systems is preventing
+    duplicate billing for the same customer and billing period.
+  </p>
+
+  <pre><code>
+CREATE TABLE billing_records (
+  billing_id INT PRIMARY KEY,
+  customer_id INT,
+  billing_month DATE,
+  amount DECIMAL(10,2),
+  UNIQUE (customer_id, billing_month)
+);
+  </code></pre>
+
+  <p>
+    A unique constraint ensures that a customer cannot be billed
+    more than once for the same billing cycle, enforcing correctness
+    at the database level rather than relying on application logic.
+  </p>
+</section>
+
 
     <section>
       <h2>Analysis</h2>
