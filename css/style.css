@@ -180,3 +180,105 @@ strong {
   color: #111827;
   font-weight: 600;
 }
+
+/* ===== Case Study Page ===== */
+
+.case-study-page {
+  background: #0b0f19;
+  color: #f9fafb;
+  padding-bottom: 100px;
+}
+
+.case-hero {
+  position: relative;
+  height: 60vh;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+}
+
+.case-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    to right,
+    rgba(2,6,23,0.9),
+    rgba(2,6,23,0.4)
+  );
+}
+
+.case-hero-content {
+  position: relative;
+  z-index: 1;
+  padding: 0 80px;
+  max-width: 700px;
+}
+
+.case-hero-content h1 {
+  font-size: 2.8rem;
+  margin-bottom: 16px;
+}
+
+.case-summary,
+.case-highlights,
+.case-viewer {
+  max-width: 900px;
+  margin: 80px auto 0;
+  padding: 0 40px;
+}
+
+.case-summary h2,
+.case-highlights h2,
+.case-viewer h2 {
+  margin-bottom: 20px;
+}
+
+.case-summary p {
+  color: #cbd5e1;
+  line-height: 1.7;
+}
+
+.case-highlights ul {
+  list-style: none;
+  padding: 0;
+}
+
+.case-highlights li {
+  margin-bottom: 12px;
+  padding-left: 18px;
+  position: relative;
+  color: #cbd5e1;
+}
+
+.case-highlights li::before {
+  content: "•";
+  position: absolute;
+  left: 0;
+  color: #2563eb;
+}
+
+.case-viewer iframe {
+  border-radius: 10px;
+  border: none;
+  margin-top: 20px;
+}
+
+.download-section {
+  margin-top: 24px;
+}
+
+.download-button {
+  display: inline-block;
+  padding: 12px 20px;
+  background: #2563eb;
+  color: #ffffff;
+  text-decoration: none;
+  border-radius: 6px;
+  font-weight: 500;
+  transition: background 0.3s ease;
+}
+
+.download-button:hover {
+  background: #1d4ed8;
+}
