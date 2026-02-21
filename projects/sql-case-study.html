@@ -2,12 +2,12 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>SQL Case Study | Dipanshu Rawat</title>
+  <title>SQL Systems Case Study | Dipanshu Rawat</title>
   <link rel="stylesheet" href="../css/style.css">
 </head>
 <body>
 
-  <nav>
+  <nav role="navigation" aria-label="Main navigation">
     <a href="../index.html">Home</a>
     <a href="../projects.html">Projects</a>
     <a href="../ai-lab.html">AI Lab</a>
@@ -15,93 +15,71 @@
     <a href="../contact.html">Contact</a>
   </nav>
 
-  <main>
-    <h1>SQL Case Study: Subscription Billing System</h1>
+  <main class="case-study-page">
 
-    <section>
-      <h2>Problem</h2>
+    <!-- Hero -->
+    <section class="case-hero"
+      style="background-image: url('../assets/images/sql-cover.jpg');">
+      <div class="case-overlay"></div>
+
+      <div class="case-hero-content">
+        <h1>SQL Systems Case Study</h1>
+        <p>
+          Relational modeling, procedural logic, optimization strategy,
+          and analytical reasoning.
+        </p>
+      </div>
+    </section>
+
+    <!-- Summary -->
+    <section class="case-summary">
+      <h2>Executive Summary</h2>
       <p>
-        Subscription-based businesses require a reliable way to manage
-        customers, plans, billing cycles, and payments.
-      </p>
-      <p>
-        Poorly designed systems often lead to duplicate charges,
-        inconsistent records, and revenue leakage.
+        This case study explores structured relational database design,
+        constraint enforcement, stored procedures, and performance
+        optimization strategies. The objective was to build a reliable,
+        scalable SQL system grounded in correctness and clarity.
       </p>
     </section>
 
-    <section>
-      <h2>Requirements</h2>
+    <!-- Key Highlights -->
+    <section class="case-highlights">
+      <h2>Key Highlights</h2>
+
       <ul>
-        <li>Store customer and subscription data</li>
-        <li>Support multiple subscription plans</li>
-        <li>Track billing cycles and payment status</li>
-        <li>Prevent duplicate or invalid billing entries</li>
+        <li>Designed normalized relational schema</li>
+        <li>Implemented triggers and stored procedures</li>
+        <li>Optimized queries using indexing strategies</li>
+        <li>Applied analytical SQL for business insights</li>
       </ul>
     </section>
 
-    <section>
-  <h2>Design</h2>
-  <p>
-    The database is designed using normalized relational tables
-    separating customers, plans, subscriptions, and payments.
-  </p>
-  <p>
-    Foreign key constraints ensure referential integrity, while
-    data constraints prevent invalid states.
-  </p>
+    <!-- PDF Viewer -->
+    <section class="case-viewer">
+      <h2>Full Case Study</h2>
 
-  <img
-    src="../assets/images/sql-er-diagram.png"
-    alt="Entity Relationship Diagram for Subscription Billing System"
-    style="width:100%; margin-top:20px; border-radius:8px;"
-  />
-</section>
+      <iframe
+        src="../assets/case-studies/sql-case-study.pdf"
+        width="100%"
+        height="600px">
+      </iframe>
 
-    <section>
-  <h2>Logic</h2>
-
-  <p>
-    One critical rule in subscription systems is preventing
-    duplicate billing for the same customer and billing period.
-  </p>
-
-  <pre><code>
-CREATE TABLE billing_records (
-  billing_id INT PRIMARY KEY,
-  customer_id INT,
-  billing_month DATE,
-  amount DECIMAL(10,2),
-  UNIQUE (customer_id, billing_month)
-);
-  </code></pre>
-
-  <p>
-    A unique constraint ensures that a customer cannot be billed
-    more than once for the same billing cycle, enforcing correctness
-    at the database level rather than relying on application logic.
-  </p>
-</section>
-
-
-    <section>
-      <h2>Analysis</h2>
-      <p>
-        This schema enables analysis of active subscriptions,
-        revenue trends, failed payments, and churn indicators.
-      </p>
+      <div class="download-section">
+        <a href="../assets/case-studies/sql-case-study.pdf"
+           download
+           class="download-button">
+          Download PDF
+        </a>
+      </div>
     </section>
 
-    <section>
-      <h2>Trade-offs</h2>
-      <p>
-        Advanced billing scenarios such as proration, discounts,
-        or multi-currency support are intentionally excluded
-        to keep the system simple and reliable.
-      </p>
-    </section>
   </main>
 
-  <script src="../js/main.js"></script>
+  <footer class="site-footer" role="contentinfo">
+    <p>
+      © <span id="year"></span> Dipanshu Rawat · Built with clarity and care
+    </p>
+  </footer>
+
 </body>
 </html>
