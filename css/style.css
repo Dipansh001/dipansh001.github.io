@@ -280,3 +280,45 @@ img {
   transform: scale(1.04);
   box-shadow: 0 15px 40px rgba(0,0,0,0.5);
 }
+
+/* ===== Project Categories ===== */
+
+.project-category {
+  margin-top: 80px;
+}
+
+.project-category h2 {
+  font-size: 1.6rem;
+  margin-bottom: 30px;
+  border-left: 4px solid #3b82f6;
+  padding-left: 12px;
+}
+
+.project-list {
+  list-style: none;
+  padding: 0;
+}
+
+.project-list li {
+  padding: 20px 0;
+  border-bottom: 1px solid #1e293b;
+  transition: transform 0.2s ease;
+}
+
+.project-list li:hover {
+  transform: translateX(6px);
+}
+
+.project-list a {
+  font-size: 1.1rem;
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.project-list span {
+  display: block;
+  font-size: 0.9rem;
+  color: #94a3b8;
+  margin-top: 6px;
+}
