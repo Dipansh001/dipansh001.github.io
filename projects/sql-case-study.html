@@ -2,97 +2,80 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>SQL Systems Case Study | Dipanshu Rawat</title>
-  <link rel="stylesheet" href="../css/style.css">
+  <title>Projects | Dipanshu Rawat</title>
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
-  <nav role="navigation" aria-label="Main navigation">
-    <a href="../index.html">Home</a>
-    <a href="../projects.html">Projects</a>
-    <a href="../ai-lab.html">AI Lab</a>
-    <a href="../about.html">About</a>
-    <a href="../contact.html">Contact</a>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="projects.html">Projects</a>
+    <a href="ai-lab.html">AI Lab</a>
+    <a href="about.html">About</a>
+    <a href="contact.html">Contact</a>
   </nav>
 
-  <main class="case-study-page">
+  <main>
 
-    <!-- Hero -->
-    <section class="case-hero"
-      style="background-image: url('../assets/images/sql-cover.jpg');">
-      <div class="case-overlay"></div>
-
-      <div class="case-hero-content">
-        <h1>SQL Systems Case Study</h1>
-        <p>
-          Relational modeling, procedural logic, optimization strategy,
-          and analytical reasoning.
-        </p>
-      </div>
+    <section class="hero">
+      <h1>Projects</h1>
+      <p class="subtitle">Selected Work · Systems · Analysis · Intelligence</p>
     </section>
 
-    <!-- Summary -->
-    <section class="case-summary">
-      <h2>Executive Summary</h2>
-      <p>
-        This case study explores structured relational database design,
-        constraint enforcement, stored procedures, and performance
-        optimization strategies. The objective was to build a reliable,
-        scalable SQL system grounded in correctness and clarity.
-      </p>
-    </section>
+    <!-- SQL SECTION -->
+    <section class="project-category">
+      <h2>SQL & Database Systems</h2>
 
-    <!-- Key Highlights -->
-    <section class="case-highlights">
-      <h2>Key Highlights</h2>
+      <ul class="project-list">
+        <li>
+          <a href="projects/sql/saas-subscription-system.html">
+            SaaS Subscription System
+          </a>
+          <span>Relational modeling · Triggers · Index optimization</span>
+        </li>
 
-      <ul>
-        <li>Designed normalized relational schema</li>
-        <li>Implemented triggers and stored procedures</li>
-        <li>Optimized queries using indexing strategies</li>
-        <li>Applied analytical SQL for business insights</li>
+        <!-- Add future SQL projects here -->
       </ul>
     </section>
-    <section class="case-slides">
 
-  <h2>Slide Highlights</h2>
+    <!-- PYTHON SECTION -->
+    <section class="project-category">
+      <h2>Python Case Studies</h2>
 
-  <div class="slide-grid">
+      <ul class="project-list">
+        <li>
+          <a href="projects/python/fraud-detection.html">
+            Fraud Detection Model
+          </a>
+          <span>EDA · Feature engineering · Predictive modeling</span>
+        </li>
 
-    <img src="../assets/images/sql-slide-1.jpg" alt="Schema Design Slide">
-    <img src="../assets/images/sql-slide-2.jpg" alt="Stored Procedures Slide">
-    <img src="../assets/images/sql-slide-3.jpg" alt="Optimization Slide">
-    <img src="../assets/images/sql-slide-4.jpg" alt="Optimization Slide">
-    
-  </div>
+        <!-- Add future Python projects here -->
+      </ul>
+    </section>
 
-</section>
-    <!-- PDF Viewer -->
-    <section class="case-viewer">
-      <h2>Full Case Study</h2>
+    <!-- VISUALIZATION SECTION -->
+    <section class="project-category">
+      <h2>Visualization & BI</h2>
 
-      <iframe
-        src="../assets/case-studies/sql-case-study.pdf"
-        width="100%"
-        height="600px">
-      </iframe>
+      <ul class="project-list">
+        <li>
+          <a href="projects/visualization/sales-dashboard.html">
+            Sales Performance Dashboard
+          </a>
+          <span>Power BI · KPI analytics · Business insights</span>
+        </li>
 
-      <div class="download-section">
-        <a href="../assets/case-studies/sql-case-study.pdf"
-           download
-           class="download-button">
-          Download PDF
-        </a>
-      </div>
+        <!-- Add future visualization projects here -->
+      </ul>
     </section>
 
   </main>
 
-  <footer class="site-footer" role="contentinfo">
-    <p>
-      © <span id="year"></span> Dipanshu Rawat · Built with clarity and care
-    </p>
+  <footer class="site-footer">
+    <p>© <span id="year"></span> Dipanshu Rawat</p>
   </footer>
 
+  <script src="js/main.js"></script>
 </body>
 </html>
