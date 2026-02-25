@@ -6,58 +6,61 @@
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-  
-  <!-- Navigation -->
-  <nav role="navigation" aria-label="Main navigation">
-    <a href="index.html">Home</a>
-    <a href="projects.html" aria-current="page">Projects</a>
-    <a href="ai-lab.html">AI Lab</a>
-    <a href="about.html">About</a>
-    <a href="contact.html">Contact</a>
-  </nav>
 
-  <!-- Main Content -->
-  <main role="main">
+<nav>
+  <a href="index.html">Home</a>
+  <a href="projects.html">Projects</a>
+  <a href="ai-lab.html">AI Lab</a>
+  <a href="about.html">About</a>
+  <a href="contact.html">Contact</a>
+</nav>
 
-    <section class="hero">
-      <h1>Projects</h1>
-      <p class="subtitle">
-        Selected work · Systems · Analysis
-      </p>
-    </section>
+<main>
 
-    <section class="card">
-      <h2>SQL & Database Systems</h2>
-      <p>
-        Relational schema design, constraints, stored procedures,
-        triggers, and analytical queries.
-      </p>
-      <a href="projects/sql-case-study.html">View case study →</a>
-    </section>
+<section class="hero">
+  <h1>Projects</h1>
+  <p class="subtitle">Systems · Data · Intelligence</p>
+</section>
 
-    <section class="card">
-      <h2>Python & Data Analysis</h2>
-      <p>
-        Data cleaning, exploratory analysis, and reasoning-driven
-        problem solving using Python.
-      </p>
-    </section>
+<section class="project-category">
+  <h2>SQL & Database Systems</h2>
 
-  </main>
+  <div class="project-item">
+    <a href="projects/sql/saas-subscription-system.html">
+      SaaS Subscription System
+    </a>
+    <p>Schema design · Triggers · Index optimization</p>
+  </div>
+</section>
 
-  <!-- Footer -->
-  <footer class="site-footer" role="contentinfo">
-    <p>
-      © <span id="year"></span> Dipanshu Rawat · Built with clarity and care
-    </p>
-    <p class="footer-links">
-      <a href="projects.html" aria-current="page">Projects</a> ·
-      <a href="ai-lab.html">AI Lab</a> ·
-      <a href="about.html">About</a> ·
-      <a href="contact.html">Contact</a>
-    </p>
-  </footer>
+<section class="project-category">
+  <h2>Python Case Studies</h2>
 
-  <script src="js/main.js"></script>
+  <div class="project-item">
+    <a href="projects/python/fraud-detection.html">
+      Fraud Detection Model
+    </a>
+    <p>EDA · Feature engineering · Predictive modeling</p>
+  </div>
+</section>
+
+<section class="project-category">
+  <h2>Visualization & BI</h2>
+
+  <div class="project-item">
+    <a href="projects/visualization/sales-dashboard.html">
+      Sales Performance Dashboard
+    </a>
+    <p>Power BI · KPI analysis · Business insights</p>
+  </div>
+</section>
+
+</main>
+
+<footer class="site-footer">
+  <p>© <span id="year"></span> Dipanshu Rawat</p>
+</footer>
+
+<script src="js/main.js"></script>
 </body>
 </html>
