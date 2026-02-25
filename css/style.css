@@ -5,20 +5,19 @@
 
 /* ===== Base ===== */
 body {
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
-    sans-serif;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
   margin: 0;
   padding: 0;
-  background: #0f172a;
-  color: #0f172a;
+  background: #0f172a;           /* Dark background */
+  color: #f1f5f9;                /* Light readable text */
   line-height: 1.7;
 }
 
 /* ===== Navigation ===== */
 nav {
   padding: 18px 28px;
-  border-bottom: 1px solid #e5e7eb;
-  background: #ffffff;
+  border-bottom: 1px solid #1e293b;
+  background: #0f172a;
   position: sticky;
   top: 0;
   z-index: 10;
@@ -27,7 +26,7 @@ nav {
 nav a {
   margin-right: 18px;
   text-decoration: none;
-  color: #374151;
+  color: #cbd5e1;
   font-weight: 500;
   position: relative;
   padding-bottom: 4px;
@@ -40,8 +39,12 @@ nav a::after {
   bottom: 0;
   width: 0;
   height: 2px;
-  background: #111827;
+  background: #3b82f6;
   transition: width 0.25s ease;
+}
+
+nav a:hover {
+  color: #ffffff;
 }
 
 nav a:hover::after {
@@ -50,12 +53,12 @@ nav a:hover::after {
 
 /* ===== Layout ===== */
 main {
-  max-width: 860px;
+  max-width: 900px;
   margin: 100px auto;
   padding: 0 24px;
 }
 
-/* ===== Hero (WHITE, FINAL) ===== */
+/* ===== Hero ===== */
 .hero {
   text-align: center;
   padding: 120px 20px 80px;
@@ -66,11 +69,12 @@ main {
   margin-bottom: 14px;
   letter-spacing: -0.03em;
   font-weight: 700;
+  color: #ffffff;
 }
 
 .hero .subtitle {
   font-size: 1.05rem;
-  color: #6b7280;
+  color: #94a3b8;
   margin-bottom: 32px;
 }
 
@@ -78,66 +82,60 @@ main {
   max-width: 620px;
   margin: 0 auto;
   font-size: 1rem;
-  color: #e2e8f0;
+  color: #cbd5e1;
 }
 
 /* ===== Headings ===== */
-/* Default headings for dark background */
-body > h1,
-body > h2,
-body > h3 {
-  color: #f1f5f9;
-}
-
-/* Headings inside light cards */
-.card h1,
-.card h2,
-.card h3 {
-  color: #111827;
+h1, h2, h3 {
+  color: #ffffff;
 }
 
 h2 {
   margin-top: 0;
-  margin-bottom: 8px;
+  margin-bottom: 12px;
 }
 
-/* ===== Cards ===== */
+/* ===== Cards (Dark, Clean) ===== */
 .card {
   background: #1e293b;
-  border-radius: 16px;
-  padding: 28px;
-  margin-bottom: 30px;
+  border-radius: 18px;
+  padding: 32px;
+  margin-bottom: 40px;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .card:hover {
   transform: translateY(-6px);
-  box-shadow: 0 25px 50px rgba(0,0,0,0.5);
+  box-shadow: 0 30px 60px rgba(0,0,0,0.5);
+}
+
+.card h2 {
+  color: #ffffff;
 }
 
 .card p {
-  margin-top: 10px;
-  color: #374151;
+  color: #cbd5e1;
 }
 
 .card a {
-  display: inline-block;
-  margin-top: 14px;
+  color: #3b82f6;
   text-decoration: none;
-  color: #111827;
   font-weight: 500;
 }
 
-/* ===== Code ===== */
+.card a:hover {
+  color: #60a5fa;
+}
+
+/* ===== Code Blocks ===== */
 pre {
-  background: #f9fafb;
-  color: #111827;
+  background: #1e293b;
+  color: #e2e8f0;
   padding: 18px;
   border-radius: 10px;
   overflow-x: auto;
   font-size: 0.9rem;
   line-height: 1.6;
-  border: 1px solid #e5e7eb;
 }
 
 code {
@@ -156,45 +154,25 @@ img {
   margin-top: 100px;
   padding: 32px 20px;
   text-align: center;
-  border-top: 1px solid #e5e7eb;
-  background: #ffffff;
-  color: #6b7280;
+  border-top: 1px solid #1e293b;
+  background: #0f172a;
+  color: #94a3b8;
   font-size: 0.9rem;
 }
 
-.site-footer p {
-  margin: 6px 0;
-}
-
 .footer-links a {
-  color: #111827;
+  color: #cbd5e1;
   text-decoration: none;
-  font-weight: 500;
 }
 
 .footer-links a:hover {
-  text-decoration: underline;
-}
-
-/* ===== Rhythm ===== */
-section {
-  margin-bottom: 48px;
-}
-
-p {
-  max-width: 65ch;
-}
-
-strong {
-  color: #111827;
-  font-weight: 600;
+  color: #ffffff;
 }
 
 /* ===== Case Study Page ===== */
-
 .case-study-page {
   background: #0b0f19;
-  color: #f9fafb;
+  color: #f1f5f9;
   padding-bottom: 100px;
 }
 
@@ -212,8 +190,8 @@ strong {
   inset: 0;
   background: linear-gradient(
     to right,
-    rgba(2,6,23,0.9),
-    rgba(2,6,23,0.4)
+    rgba(2,6,23,0.95),
+    rgba(2,6,23,0.5)
   );
 }
 
@@ -227,25 +205,21 @@ strong {
 .case-hero-content h1 {
   font-size: 2.8rem;
   margin-bottom: 16px;
+  color: #ffffff;
 }
 
 .case-summary,
 .case-highlights,
-.case-viewer {
-  max-width: 900px;
+.case-viewer,
+.case-slides {
+  max-width: 1000px;
   margin: 80px auto 0;
   padding: 0 40px;
 }
 
-.case-summary h2,
-.case-highlights h2,
-.case-viewer h2 {
-  margin-bottom: 20px;
-}
-
-.case-summary p {
+.case-summary p,
+.case-highlights li {
   color: #cbd5e1;
-  line-height: 1.7;
 }
 
 .case-highlights ul {
@@ -257,14 +231,13 @@ strong {
   margin-bottom: 12px;
   padding-left: 18px;
   position: relative;
-  color: #cbd5e1;
 }
 
 .case-highlights li::before {
   content: "•";
   position: absolute;
   left: 0;
-  color: #2563eb;
+  color: #3b82f6;
 }
 
 .case-viewer iframe {
@@ -273,34 +246,23 @@ strong {
   margin-top: 20px;
 }
 
-.download-section {
-  margin-top: 24px;
-}
-
+/* ===== Download Button ===== */
 .download-button {
   display: inline-block;
   padding: 12px 20px;
-  background: #2563eb;
+  background: #3b82f6;
   color: #ffffff;
   text-decoration: none;
-  border-radius: 6px;
+  border-radius: 8px;
   font-weight: 500;
   transition: background 0.3s ease;
 }
 
 .download-button:hover {
-  background: #1d4ed8;
-}
-.case-slides {
-  max-width: 1100px;
-  margin: 80px auto 0;
-  padding: 0 40px;
+  background: #2563eb;
 }
 
-.case-slides h2 {
-  margin-bottom: 30px;
-}
-
+/* ===== Slides Grid ===== */
 .slide-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
@@ -309,12 +271,12 @@ strong {
 
 .slide-grid img {
   width: 100%;
-  border-radius: 10px;
+  border-radius: 12px;
   transition: transform 0.4s ease, box-shadow 0.4s ease;
   cursor: pointer;
 }
 
 .slide-grid img:hover {
   transform: scale(1.04);
-  box-shadow: 0 15px 40px rgba(0,0,0,0.4);
+  box-shadow: 0 15px 40px rgba(0,0,0,0.5);
 }
