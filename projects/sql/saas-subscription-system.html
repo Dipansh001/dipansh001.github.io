@@ -53,7 +53,17 @@
          Download Full Case Study (PDF)
       </a>
     </section>
+    <section class="case-slides">
+  <h2>Project Showcase</h2>
 
+  <div class="slide-grid">
+    <img src="../../assets/images/slide1.jpg" alt="Schema Design">
+    <img src="../../assets/images/slide2.jpg" alt="Trigger Logic">
+    <img src="../../assets/images/slide3.jpg" alt="Performance Optimization">
+    <img src="../../assets/images/slide4.jpg" alt="Overall">
+    
+  </div>
+</section>
   </main>
 
   <footer class="site-footer">
@@ -61,5 +71,27 @@
   </footer>
 
   <script src="../../js/main.js"></script>
+<div id="lightbox">
+  <span id="closeLightbox">&times;</span>
+  <img id="lightboxImg">
+</div>
+
+<script>
+const images = document.querySelectorAll('.slide-grid img');
+const lightbox = document.getElementById('lightbox');
+const lightboxImg = document.getElementById('lightboxImg');
+const closeBtn = document.getElementById('closeLightbox');
+
+images.forEach(img => {
+  img.addEventListener('click', () => {
+    lightbox.style.display = 'flex';
+    lightboxImg.src = img.src;
+  });
+});
+
+closeBtn.addEventListener('click', () => {
+  lightbox.style.display = 'none';
+});
+</script>
 </body>
 </html>
