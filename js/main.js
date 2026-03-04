@@ -28,3 +28,32 @@ function revealOnScroll() {
 
 window.addEventListener('scroll', revealOnScroll);
 window.addEventListener('load', revealOnScroll);
+
+// ===== Timeline Progress Line =====
+
+function updateTimelineProgress() {
+  const timeline = document.querySelector(".timeline");
+
+  if (!timeline) return;
+
+  const rect = timeline.getBoundingClientRect();
+  const windowHeight = window.innerHeight;
+
+  const scrollProgress = Math.min(
+    Math.max((windowHeight - rect.top) / rect.height, 0),
+    1
+  );
+
+  timeline.style.setProperty("--timeline-progress", scrollProgress);
+
+  timeline.style.setProperty(
+    "height",
+    `${timeline.offsetHeight}px`
+  );
+
+  const line = timeline;
+  line.style.setProperty("--progress", scrollProgress);
+}
+
+window.addEventListener("scroll", updateTimelineProgress);
+window.addEventListener("load", updateTimelineProgress);
