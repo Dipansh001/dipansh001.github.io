@@ -545,3 +545,12 @@ img {
   transform: translateX(-50%);
   transition: height 0.2s ease-out;
 }
+.contact-form {
+  max-width: 750px;
+  margin: 40px auto 100px auto;
+}
+
+.contact-form iframe {
+  border-radius: 12px;
+  background: white;
+}
